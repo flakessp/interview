@@ -74,3 +74,21 @@ alert( applyAll(Math.max, 2, -2, 3) ); // 3
 // Применить Math.min к аргументам 2, -2, 3
 alert( applyAll(Math.min, 2, -2, 3) ); // -2
 ```
+
+# Node.js
+
+Что будет результатом выполнения следующего кода?
+
+```javascript
+var http = require("http");
+
+http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/plain'});
+
+  setTimeout(function(){
+    response.end('Goodbye World\n');
+  }, 1000);
+
+  response.write("Hello World\n");
+}).listen(3000);
+```
