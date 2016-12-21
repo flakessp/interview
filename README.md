@@ -92,3 +92,15 @@ http.createServer(function(request, response) {
   response.write("Hello World\n");
 }).listen(3000);
 ```
+
+Что выведется в консоли?
+```javascript
+var fs = require("fs");
+//readFile по умолчанию выполняется асинхронно
+fs.readFile('/etc/this/file/exists.txt', function (err, data) {
+  if (err) throw err;
+  console.log("File read.");
+});
+
+console.log("I love bees.");
+```
