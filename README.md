@@ -37,8 +37,31 @@
 
 - Ооп (наследование)
 
+- зачем нужны .prototype?
+
+- в чем разница ?
+```javascript
+function Dice(sides) {
+  this.sides = sides;
+}
+
+Dice.prototype.roll = function () {
+  var random = Math.floor(Math.random() * this.sides) + 1;
+  return random;
+}
+// от
+function Dice(sides) {
+  this.sides = sides;
+  this.roll = function () {
+    var random = Math.floor(Math.random() * this.sides) + 1;
+    return random;
+  }
+}
+
+```
+
 - Замыкания
-- Карринг 
+- Карринг
 
 ## Задачи на понимание this и передача контекста
 ### Перепишите суммирование аргументов
