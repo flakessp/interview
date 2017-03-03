@@ -3,7 +3,7 @@
 - Что такое ip?
 - Чем отличается клиент от сервера?
 - Что происходит когда мы вбиваем 'google.com' в адресную строку браузера и нажимаем Enter?
-- Http запросы
+- Http запросы 
 - Коды ошибок
 - Чем отличие куки от сессии
 - Токенизация
@@ -38,6 +38,38 @@
 - Ооп (наследование)
 
 - зачем нужны .prototype?
+
+- базовый вопрос на циклы и понимание контекста, каков результат выполнения кода?
+```javascript
+(function initLoop() {
+  function doLoop(x) {
+    i = 3;
+    console.log('loop:', x);
+  }
+
+  for (var i = 0; i < 10; i++) {
+    doLoop(i + 1);
+  }
+})();
+```
+
+- понимание контекстов
+```javascript
+'use strict';
+
+(function () {
+  const student = { name: 'James' };
+
+  function createStudent(name) {
+    const student = { name: name };
+    return student;
+  }
+
+  console.log(createStudent('Ken'));
+  console.log(student);
+})();
+```
+
 
 - в чем разница ?
 ```javascript
