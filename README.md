@@ -160,3 +160,11 @@ fs.readFile('/etc/this/file/exists.txt', function (err, data) {
 
 console.log("I love bees.");
 ```
+
+# React
+
+Как сделать проверку на типы передаваемых значений (props)?
+> Component.propTypes = {stringVar:React.PropTypes.string}
+
+Как сделать значения по умолчания в случае отсутсвия данных?
+> Component.defaultProps = {stringVar:'default value'}
