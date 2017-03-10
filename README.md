@@ -168,3 +168,14 @@ console.log("I love bees.");
 
 Как сделать значения по умолчания в случае отсутсвия данных?
 > Component.defaultProps = {stringVar:'default value'}
+
+How should you set an initial state value for a component?
+
+How do we communicate events up through the DOM tree in a standard React application?
+
+How do we define a property called onChange is a required function for a Counter component?
+
+
+#ES6
+
+Отличие объявления переменных с помощью let/const от var
